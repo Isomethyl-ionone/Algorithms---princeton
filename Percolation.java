@@ -1,4 +1,7 @@
-
+/**
+* Bovina Evgenia, 13.10.18
+* grade 100
+ */
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 public class Percolation {
