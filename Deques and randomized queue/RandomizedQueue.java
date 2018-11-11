@@ -92,10 +92,10 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         }
 
         public Item next() {
+            if (!hasNext()) throw new NoSuchElementException();
             if (copyArray[i] == null) {
                 throw new java.util.ConcurrentModificationException();
             }
-            if (!hasNext()) throw new NoSuchElementException();
             return copyArray[i++];
         }
     }
